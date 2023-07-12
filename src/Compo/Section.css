@@ -1,0 +1,23 @@
+.heads{
+    background-color: rgb(17, 174, 185);
+    background-image: linear-gradient(to right, #0b5493, #0d8ab0);
+    border-radius: 10px;
+    margin: 2px;
+    height: 30px;
+    /* width: 100px; */
+    color: aquamarine;
+}
+.heads2{
+    color: aquamarine;
+    background-color: rgb(17, 174, 185);
+    background-image: linear-gradient(to right, #0553a0, #66d0f0);
+    border-radius: 10px;
+    margin: 2px;
+    height: 30px;
+    /* width: 100px; */
+}
+.recomm{
+    background-color: rgb(114, 36, 36);
+    color: white;
+    border-radius: 10px;
+}

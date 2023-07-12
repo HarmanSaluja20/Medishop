@@ -1,0 +1,8 @@
+.form-control {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-input {
+    width: 300px;
+  }
