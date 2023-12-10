@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs')
 var jwt = require('jsonwebtoken');
 const axios = require('axios')
 const fetch = require('../middleware/fetchdetails');
-const jwtSecret = "HaHa"
+const jwtSecret = "khkbjlh"
 router.post('/createuser', [
     body('email').isEmail(),
     body('password').isLength({ min: 5 }),
@@ -18,12 +18,12 @@ router.post('/createuser', [
     if (!errors.isEmpty()) {
         return res.status(400).json({ success, errors: errors.array() })
     }
-    const salt = await bcrypt.genSalt(10)
+    const salt = await bcrypt.genSalt(10) 
     let securePass = await bcrypt.hash(req.body.password, salt);
     try {
         await User.create({
             name: req.body.name,
-            // password: req.body.password,  first write this and then use bcryptjs
+            // password: req.body.password
             password: securePass,
             email: req.body.email,
             location: req.body.location
